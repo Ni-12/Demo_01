@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> ONF </title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="icon" href="imgg/ONF/WM.ico" type="image/x-icon">
+  <style>
+    @import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+    body {
+      background-color: #161313;
+      font-family: 'cwTeXYen', Courier New;
+      font-size: large;
+    }
+
+    @media screen and (max-width:769px) {
+      #pic {
+        display: none;
+      }
+
+      #mini {
+        opacity: 1.0;
+      }
+
+      #mini:hover {
+        opacity: 0.5;
+      }
+    }
+  </style>
+  <link rel="stylesheet" media="screen and (max-width:576px)">
+</head>
+
+<body>
+  <div class="container mt-3">
+    <div class="row justify-content-center">
+      <!-- 導覽列 -->
+      <div class="row justify-content-center">
+        <!-- 導覽列 -->
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #1C353C;">
+          <div class="container-fluid">
+            <a style="color:#f1f1f1;" class="navbar-brand" href="#">ONF</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link " aria-current="page" href="ONF.html">Profile</a>
+                </li>
+                <li class="nav-item">
+                  <a style="color:#FF5439 ;" class="nav-link active" href="Meber.html">Meber</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="Album.html">Album</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <!-- 跑馬燈 -->
+        <div id="mycarousel" class="carousel slide mt-3" data-bs-ride="carousel">
+          <!--跳頁-->
+          <ol class="carousel-indicators">
+            <li data-bs-target="#mycarousel" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#mycarousel" data-bs-slide-to="1"></li>
+            <li data-bs-target="#mycarousel" data-bs-slide-to="2"></li>
+          </ol>
+          <!--data-bs-interval(跳轉時間)-->
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2500">
+              <img src="imgg/ONF/O-1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="2500">
+              <img src="imgg/ONF/O-2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="2500">
+              <img src="imgg/ONF/O-3.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <!--箭頭-->
+          <a class="carousel-control-prev" href="#mycarousel" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#mycarousel" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Next</span>
+          </a>
+        </div>
+
+        <!-- 大頭 -->
+        <div class="container">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+            <div class="col mt-3">
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-6">
+                    <img class="img-fluid" src="imgg/meber/HJ.jpg">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-body">
+                      <h5 class="card-title" style="text-align: center;">Hyojin</h5>
+                      <!-- <p class="card-text" style="text-align: center;" >
+                        金曉珍<br>
+                      </p> -->
+                      <p style="text-align: center; font-size:large;">
+                        金曉珍<br>
+                        ▸ LEADER、VOCAL<br><br>
+                        <img id="pic" class="img-fluid" src="imgg/meber/Q_HJ.jpg" style="border-radius: 50%;">
+                      </p>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col mt-3">
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-6">
+                    <img class="img-fluid" src="imgg/meber/CY.jpg">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-body">
+                      <h5 class="card-title" style="text-align: center;">E-TION</h5>
+                      <!-- <p class="card-text" style="text-align: center;" >
+                        李昌潤<br>
+                      </p> -->
+                      <p style="text-align: center; font-size:large;">
+                        李昌潤<br>
+                        ▸ VOCAL<br><br>
+                        <img id="pic" class="img-fluid" src="imgg/meber/Q_CY.jpg" style="border-radius: 50%;">
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col mt-3">
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-6">
+                    <img class="img-fluid" src="imgg/meber/SJ.jpg">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-body">
+                      <h5 class="card-title" style="text-align: center;">J-US</h5>
+                      <!-- <p class="card-text" style="text-align: center;" >
+                        李昇俊<br>
+                      </p> -->
+                      <p style="text-align: center; font-size:large;">
+                        李昇俊<br>
+                        ▸ LEADER、DANCE<br><br>
+                        <img id="pic" class="img-fluid" src="imgg/meber/Q_SJ.jpg" style="border-radius: 50%;">
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col mt-3">
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-6">
+                    <img class="img-fluid" src="imgg/meber/JY.jpg">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-body">
+                      <h5 class="card-title" style="text-align: center;">Wyatt</h5>
+                      <!-- <p class="card-text" style="text-align: center;" >
+                        沈宰營<br>
+                      </p> -->
+                      <p style="text-align: center; font-size:large;">
+                        沈宰營<br>
+                        ▸RAP、DANCE<br><br>
+                        <img id="pic" class="img-fluid" src="imgg/meber/Q_JY.jpg" style="border-radius: 50%;">
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col mt-3">
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-6">
+                    <img class="img-fluid" src="imgg/meber/MK.jpg">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-body">
+                      <h5 class="card-title" style="text-align: center;">MK</h5>
+                      <!-- <p class="card-text" style="text-align: center;" >
+                        朴珉均<br>
+                      </p> -->
+                      <p style="text-align: center; font-size:large;">
+                        朴珉均<br>
+                        ▸ VOCAL、RAP<br><br>
+                        <img id="pic" class="img-fluid" src="imgg/meber/Q_MK2.jpg" style="border-radius: 50%;">
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col mt-3">
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-6">
+                    <img class="img-fluid" src="imgg/meber/YT.jpg">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-body">
+                      <h5 class="card-title" style="text-align: center;">U</h5>
+                      <!-- <p class="card-text" style="text-align: center;" >
+                        水口裕斗<br>
+                      </p> -->
+                      <p style="text-align: center; font-size:large;">
+                        &nbsp;水口裕斗<br>
+                        ▸ DANCE<br><br>
+                        <img id="pic" class="img-fluid" src="imgg/meber/Q_YT.jpg" style="border-radius: 50%;">
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="codrops-links" style="text-align: center;">
+            <a style="text-decoration:none;" class="github"
+              href="https://www.youtube.com/channel/UCgdj5bL5_Il2tqsQ7J4k6zw" target="_blank">
+              <img id="mini" src="imgg/icon/youtube.png">
+            </a>
+            <a style="text-decoration:none;" class="github" href="https://www.instagram.com/wm_onoff/" target="_blank">
+              <img id="mini" src="imgg/icon/instagram.png">
+            </a>
+            <a style="text-decoration:none;" class="github" href="https://twitter.com/WM_ONOFF" target="_blank">
+              <img id="mini" src="imgg/icon/twitter.png">
+            </a>
+            <a style="text-decoration:none;" class="github" href="http://cafe.daum.net/-onoff" target="_blank">
+              <img id="mini" src="imgg/icon/fans.png">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+      var myModal = document.getElementById('myModal')
+      var myInput = document.getElementById('myInput')
+
+      myModal.addEventListener('shown.bs.modal', function () {
+        myInput.focus()
+      })
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> ONF </title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link href="css/demo-page.css" rel="stylesheet" media="all">
+  <link rel="icon" href="imgg/ONF/WM.ico" type="image/x-icon">
+  <style>
+    @import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+    body {
+      background-color: #161313;
+      font-family: 'cwTeXYen', Courier New;
+      font-size: large;
+    }
+
+    #card {
+      float: left;
+      width: 18rem;
+      margin-top: 20px;
+      margin-right: 10px;
+    }
+
+    #mini {
+      opacity: 1.0;
+
+    }
+
+    #mini:hover {
+      opacity: 0.5;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container mt-3">
+    <div class="row justify-content-center">
+
+      <!-- 導覽列 -->
+      <div class="row justify-content-center">
+        <!-- 導覽列 -->
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #1C353C;">
+          <div class="container-fluid">
+            <a style="color:#f1f1f1;" class="navbar-brand" href="#">ONF</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="ONF.html">Profile</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Meber.html">Meber</a>
+                </li>
+                <li class="nav-item">
+                  <a style="color:#FF5439 ;" class="nav-link active " href="Album.html">Album</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- 專輯 -->
+        <div class="container ">
+          <!-- mini -->
+          <h5 style="color:#FF5439;" class="mt-3">Mini Album</h5>
+          <div class="row row-cols-2 row-cols-sm-3 row-cols-lg-5">
+            <div class="col mt-3">
+              <img id="mini" type="button" src="imgg/album/mini05.jpg" img class="img-fluid" data-bs-toggle="modal"
+                data-bs-target="#exampleModal_mini05">
+            </div>
+            <div class="col mt-3">
+              <img id="mini" type="button" src="imgg/album/mini04.png" img class="img-fluid" data-bs-toggle="modal"
+                data-bs-target="#exampleModal_mini04">
+            </div>
+            <div class="col mt-3">
+              <img id="mini" type="button" src="imgg/album/mini03.jpg" img class="img-fluid" data-bs-toggle="modal"
+                data-bs-target="#exampleModal_mini03">
+            </div>
+            <div class="col mt-3">
+              <img id="mini" type="button" src="imgg/album/mini02.jpg" img class="img-fluid" data-bs-toggle="modal"
+                data-bs-target="#exampleModal_mini02">
+            </div>
+            <div class="col mt-3">
+              <img id="mini" type="button" src="imgg/album/mini01.jpg" img class="img-fluid" data-bs-toggle="modal"
+                data-bs-target="#exampleModal_mini01">
+            </div>
+          </div>
+          <!-- JP mini -->
+          <h5 style="color:#FF5439;" class="mt-3">Japanese Mini Album</h5>
+          <div class="row row-cols-2 row-cols-sm-3 row-cols-lg-5">
+            <div class="col mt-3">
+              <img id="mini" type="button" src="imgg/album/JPmini02.jpg" img class="img-fluid" data-bs-toggle="modal"
+                data-bs-target="#exampleModal_JPmini02">
+            </div>
+            <div class="col mt-3">
+              <img id="mini" type="button" src="imgg/album/JPmini01.jpg" img class="img-fluid" data-bs-toggle="modal"
+                data-bs-target="#exampleModal_JPmini01">
+            </div>
+          </div>
+          <!-- OST -->
+          <h5 style="color:#FF5439;" class="mt-3">OST</h5>
+          <div class="row row-cols-2 row-cols-sm-3 row-cols-lg-5">
+            <div class="col mt-3">
+              <img id="mini" type="button" src="imgg/album/OST04.jpg" img class="img-fluid" data-bs-toggle="modal"
+                data-bs-target="#exampleModal_OST04">
+            </div>
+            <div class="col mt-3">
+              <img id="mini" type="button" src="imgg/album/OST03.jpg" img class="img-fluid" data-bs-toggle="modal"
+                data-bs-target="#exampleModal_OST03">
+            </div>
+            <div class="col mt-3">
+              <img id="mini" type="button" src="imgg/album/OST02.jpg" img class="img-fluid" data-bs-toggle="modal"
+                data-bs-target="#exampleModal_OST02">
+            </div>
+            <div class="col mt-3">
+              <img id="mini" type="button" src="imgg/album/OST01.jpg" img class="img-fluid" data-bs-toggle="modal"
+                data-bs-target="#exampleModal_OST01">
+            </div>
+          </div>
+          <!--other-->
+          <h5 style="color:#FF5439;" class="mt-3">Other</h5>
+          <div class="row row-cols-2 row-cols-sm-3 row-cols-lg-5">
+            <div class="col mt-3">
+              <button id="mini" type="button" class="btn btn-lg" style="background-color: #1C353C; color: #FFB916;"
+                data-bs-toggle="modal" data-bs-target="#exampleModal_other">WM Entertainment</button>
+            </div>
+          </div><br>
+          <div class="codrops-links" style="text-align: center;">
+            <a style="text-decoration:none;" class="github"
+              href="https://www.youtube.com/channel/UCgdj5bL5_Il2tqsQ7J4k6zw" target="_blank">
+              <img id="mini" src="imgg/icon/youtube.png">
+            </a>
+            <a style="text-decoration:none;" class="github" href="https://www.instagram.com/wm_onoff/" target="_blank">
+              <img id="mini" src="imgg/icon/instagram.png">
+            </a>
+            <a style="text-decoration:none;" class="github" href="https://twitter.com/WM_ONOFF" target="_blank">
+              <img id="mini" src="imgg/icon/twitter.png">
+            </a>
+            <a style="text-decoration:none;" class="github" href="http://cafe.daum.net/-onoff" target="_blank">
+              <img id="mini" src="imgg/icon/fans.png">
+            </a>
+          </div>
+        </div>
+
+        <!-- Modal / mini01 -->
+        <div class="modal fade" id="exampleModal_mini01" tabindex="-1" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog modal-fullscreen-sm-down">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">《ON/OFF》</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm">
+                      <img src="imgg/album/mini01.jpg" img class="img-fluid">
+                    </div>
+                  </div>
+                </div><br>
+                <p style="text-align: center;">發行日期：2017年8月2日</p>
+                <p style="text-align: center;">ONF將會展現洗鍊的音樂與演出，如同名字一般，他們將會展現出舞台上強烈的『ON』形象與親切的『OFF』魅力</p>
+                <h5 style="text-align: center;">MUSIC VIDEO</h5><br>
+                <div class="ratio ratio-16x9">
+                  <!-- <iframe src="https://www.youtube.com/embed/RQlMI0n10VY"
+                    title="YouTube video" allowfullscreen></iframe>-->
+                  <a href="https://youtu.be/RQlMI0n10VY" target="_blank">
+                    <img title="ON/OFF MV Full ver." src="http://img.youtube.com/vi/RQlMI0n10VY/maxresdefault.jpg" img
+                      class="img-fluid">
+                  </a>
+                </div><br>
+                <h5 style="text-align: center;">TRACK</h5><br>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-6">
+                      <img src="imgg/album/track/album_1.jpg" img class="img-fluid">
+                    </div>
+                    <div class="col-6">
+                      <p style="text-align:left;"><br>
+                        <img src="imgg/ONF/fig044.gif">&ensp;ON/OFF<br><br>
+                        ▸ Diffcult<br><br>
+                        ▸ If We Dream<br><br>
+                        ▸ Original<br><br>
+                        ▸ Cat's Waltz<br><br>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal / mini02 -->
+        <div class="modal fade" id="exampleModal_mini02" tabindex="-1" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog modal-fullscreen-sm-down">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">《You Complete Me》</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm">
+                      <img src="imgg/album/mini02.jpg" img class="img-fluid">
+                    </div>
+                  </div>
+                </div> <br>
+                <p style="text-align: center;">發行日期：2018年6月7日</p>
+                <p style="text-align: center;">ONF以夏日藍色為主題回歸，散發ONF的獨有清爽活力，展現清新可愛的歌曲給粉絲。</p>
+                <h5 style="text-align: center;">MUSIC VIDEO</h5><br>
+                <div class="ratio ratio-16x9">
+                  <!-- <iframe src="https://www.youtube.com/embed/Qa8wR2JGK-k?list=PLagFXydGyJUrsFK_82mLasfncktA4eQDK"
+                    title="YouTube video" allowfullscreen></iframe> -->
+                  <a href="https://youtu.be/Qa8wR2JGK-k" target="_blank">
+                    <img title="Complete MV Full ver." src="http://img.youtube.com/vi/Qa8wR2JGK-k/maxresdefault.jpg" img
+                      class="img-fluid">
+                  </a>
+                </div><br>
+                <h5 style="text-align: center;">TRACK</h5><br>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-6">
+                      <img src="imgg/album/track/album_2.jpg" img class="img-fluid">
+                    </div>
+                    <div class="col-6">
+                      <p style="text-align:left;">
+                        <img src="imgg/ONF/fig044.gif">&ensp;Complete<br><br>
+                        ▸ Fly Me To The &nbsp;&nbsp; Moon<br><br>
+                        ▸ Good Morning<br><br>
+                        ▸ Fifty Fifty<br><br>
+                        ▸ Incomplete<br><br>
+                        ▸ 86400<br><br>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal / mini03 -->
+        <div class="modal fade" id="exampleModal_mini03" tabindex="-1" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog modal-fullscreen-sm-down">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">《We Must Love》</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm">
+                      <img src="imgg/album/mini03.jpg" img class="img-fluid">
+                    </div>
+                  </div>
+                </div> <br>
+                <p style="text-align: center;">發行日期：2019年2月7日</p>
+                <p style="text-align: center;">透過《We Must Love》展現出與第一、二張專輯不同的成熟的模樣。</p>
+                <h5 style="text-align: center;">MUSIC VIDEO</h5><br>
+                <div class="ratio ratio-16x9">
+                  <!-- <iframe src="https://www.youtube.com/embed/oGTJkDWxR_s" title="YouTube video"
+                    allowfullscreen></iframe> -->
+                  <a href="https://youtu.be/oGTJkDWxR_s" target="_blank">
+                    <img title="We Must Love MV Full ver." src="http://img.youtube.com/vi/oGTJkDWxR_s/maxresdefault.jpg"
+                      img class="img-fluid">
+                  </a>
+                </div><br>
+                <h5 style="text-align: center;">TRACK</h5><br>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-6">
+                      <img src="imgg/album/track/album_3.jpg" img class="img-fluid">
+                    </div>
+                    <div class="col-6">
+                      <p style="text-align:left;">
+                        <img src="imgg/ONF/fig044.gif">&ensp;We Must Love<br><br>
+                        ▸ Ice & Fire<br><br>
+                        ▸ Yayaya<br><br>
+                        ▸ Happily never &nbsp;&nbsp; after<br><br>
+                        ▸ I Do<br><br>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal / mini04 -->
+        <div class="modal fade" id="exampleModal_mini04" tabindex="-1" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog modal-fullscreen-sm-down">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">《GO LIVE》</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm">
+                      <img src="imgg/album/mini04.png" img class="img-fluid">
+                    </div>
+                  </div>
+                </div> <br>
+                <p style="text-align: center;">發行日期：2019年10月7日</p>
+                <p style="text-align: center;">《GO LIVE》專輯內從舞曲、抒情歌到散發神秘氣息的小調歌曲一應俱全，融合了劇情的預告片也讓期待感直線上升。</p>
+                <h5 style="text-align: center;">MUSIC VIDEO</h5><br>
+                <div class="ratio ratio-16x9">
+                  <!-- <iframe src="https://www.youtube.com/embed/gH14nS5NC0g" title="YouTube video"
+                    allowfullscreen></iframe> -->
+                  <a href="https://youtu.be/gH14nS5NC0g" target="_blank">
+                    <img title="WHY MV Full ver." src="http://img.youtube.com/vi/gH14nS5NC0g/maxresdefault.jpg" img
+                      class="img-fluid">
+                  </a>
+                </div><br>
+                <h5 style="text-align: center;">TRACK</h5><br>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-6">
+                      <img src="imgg/album/track/album_4.jpg" img class="img-fluid">
+                    </div>
+                    <div class="col-6"><br>
+                      <p style="text-align:left;">
+                        <img src="imgg/ONF/fig044.gif">&ensp;WHY<br><br>
+                        ▸ Asteroid<br><br>
+                        ▸ All Day<br><br>
+                        ▸ MOSCOW MOSCOW<br><br>
+                        ▸ TWINKLE TWINKLE<br><br>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal / mini05 -->
+        <div class="modal fade" id="exampleModal_mini05" tabindex="-1" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog modal-fullscreen-sm-down">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">《SPIN OFF》</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm">
+                      <img src="imgg/album/mini05.jpg" img class="img-fluid">
+                    </div>
+                  </div>
+                </div> <br>
+                <p style="text-align: center;">發行日期：2020年8月10日</p>
+                <p style="text-align: center;">自去年10月推出《GO LIVE》後，相隔10個月的新專輯。新歌《Sukhumvit
+                  Swimming》的標題則印在專輯封面底部，成員圖像用灰階色調，非常有特色。</p>
+                <h5 style="text-align: center;">MUSIC VIDEO</h5><br>
+                <div class="ratio ratio-16x9">
+                  <!--<iframe src="https://youtu.be/pFSqmE-jy9g" title="YouTube video" allowfullscreen></iframe> -->
+                  <a href="https://youtu.be/pFSqmE-jy9g" target="_blank">
+                    <img title="Sukhumvit Swimming MV Full ver."
+                      src="http://img.youtube.com/vi/pFSqmE-jy9g/maxresdefault.jpg" img class="img-fluid">
+                  </a>
+                </div><br>
+                <h5 style="text-align: center;">TRACK</h5><br>
+                <div class="container">
+                  <div class="row">
+                    <img src="imgg/album/track/album_5.jpg" img class="img-fluid">
+                  </div>
+                  <div class="row">
+                    <p style="text-align:left;"><br>
+                      <img src="imgg/ONF/fig044.gif">&ensp;Sukhumvit Swimming<br><br>
+                      ▸ Belle Epoque<br><br>
+                      ▸ Geppetto<br><br>
+                      ▸ Good Good<br><br>
+                      ▸ 仙人掌<br><br>
+                      ▸ Message<br><br>
+                      ▸ 新世界 (SPIN OFF Ver.)<br><br>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal / JP01 -->
+    <div class="modal fade" id="exampleModal_JPmini01" tabindex="-1" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen-sm-down">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">《ON/OFF -Japanese Ver.-》</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm">
+                  <a href="https://youtu.be/AtCSoGYMGuo" target="_blank">
+                    <img title="ON/OFF (Japanese Ver.) MV Full ver." src="imgg/album/JPmini01.jpg" img
+                      class="img-fluid">
+                  </a>
+                </div>
+              </div>
+            </div><br>
+            <p style="text-align: center;">發行日期：2018年8月1日</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal / JP02 -->
+    <div class="modal fade" id="exampleModal_JPmini02" tabindex="-1" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen-sm-down">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">《Complete -Japanese Ver.-》</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm">
+                  <a href="https://youtu.be/Qtp651S21m0" target="_blank">
+                    <img title="Complete (Japanese Ver.) MV Full ver." src="imgg/album/JPmini02.jpg" img
+                      class="img-fluid">
+                  </a>
+                </div>
+              </div>
+            </div> <br>
+            <p style="text-align: center;">發行日期：2018年9月26日</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal / OST01 -->
+    <div class="modal fade" id="exampleModal_OST01" tabindex="-1" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen-sm-down">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">《No Control》</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm">
+                  <img src="imgg/album/OST01.jpg" img class="img-fluid">
+                </div>
+              </div>
+            </div><br>
+            <p style="text-align: center;">發行日期：2018年5月5日</p>
+            <p style="text-align: center;">《神秘公寓:鬼神球的秘密X的誕生》OST</p>
+            <div class="ratio ratio-16x9">
+              <iframe src="https://www.youtube.com/embed/xnfRtPiZXK0?list=PL2GMtjIf0bZDV-dep6aGR1NsqII-ZGg7u"
+                title="YouTube video" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal / OST02 -->
+    <div class="modal fade" id="exampleModal_OST02" tabindex="-1" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen-sm-down">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">《Your Day》</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm">
+                  <img src="imgg/album/OST02.jpg" img class="img-fluid">
+                </div>
+              </div>
+            </div> <br>
+            <p style="text-align: center;">發行日期：2018年7月24日</p>
+            <p style="text-align: center;">《一起吃飯吧3 OST Part.1》</p>
+            <div class="ratio ratio-16x9">
+              <iframe src="https://www.youtube.com/embed/yY4aSCzgfPM" title="YouTube video" allowfullscreen></iframe>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal / OST03 -->
+    <div class="modal fade" id="exampleModal_OST03" tabindex="-1" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen-sm-down">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">《Pretty》</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm">
+                  <img src="imgg/album/OST03.jpg" img class="img-fluid">
+                </div>
+              </div>
+            </div> <br>
+            <p style="text-align: center;">發行日期：2019年7月14日</p>
+            <p style="text-align: center;">《胖乎乎戀愛2 OST Part.1》 </p>
+            <div class="ratio ratio-16x9">
+              <iframe src="https://www.youtube.com/embed/Z35sIdL8Frs" title="YouTube video" allowfullscreen></iframe>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal / OST04 -->
+    <div class="modal fade" id="exampleModal_OST04" tabindex="-1" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen-sm-down">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">《Not a sad song》</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm">
+                  <a href="https://youtu.be/ml-fJfpc2z0" target="_blank">
+                    <img title="Not a sad song MV Full ver." src="imgg/album/OST04.jpg" img class="img-fluid">
+                  </a>
+                </div>
+              </div>
+            </div> <br>
+            <p style="text-align: center;">發行日期：2020年10月22日</p>
+            <p style="text-align: center;">《戀愛革命 OST Part.1》</p>
+          </div>
+          <!-- <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <!-- Modal / Other -->
+    <div class="modal fade" id="exampleModal_other" tabindex="-1" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen-sm-down">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">WM Entertainment</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+
+          <div class="modal-body">
+            <div class="container">
+
+              <!--超過md大小會留白-->
+              <div class="col">
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <a class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" href="#pills-home" role="tab"
+                      aria-controls="pills-home" aria-selected="true">Timing</a>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" href="#pills-profile" role="tab"
+                      aria-controls="pills-profile" aria-selected="false">你和我的時代(Ours)</a>
+                  </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                  <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                    aria-labelledby="pills-home-tab">
+                    <div class="card">
+                      <!--style:卡片固定大小 沒有style隨頁面大小更改-->
+                      <a href="https://youtu.be/y2BwMqpGzC8" target="_blank">
+                        <img title="Timing MV Full ver." src="imgg/album/other01.jpg" class="card-img-top" alt="...">
+                      </a>
+                      <div class="card-body">
+                        <h5 style="text-align: center;">發行日期：2018年12月10日<h5><br>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    <div class="card">
+                      <!--style:卡片固定大小 沒有style隨頁面大小更改-->
+                      <a href="https://youtu.be/oS4TylrIEuo" target="_blank">
+                        <img title="Ours MV Full ver." src="imgg/album/other02.jpg" class="card-img-top" alt="...">
+                      </a>
+                      <div class="card-body">
+                        <h5 style="text-align: center;">發行日期：2020年9月4日<h5><br>
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+      var myModal = document.getElementById('myModal')
+      var myInput = document.getElementById('myInput')
+
+      myModal.addEventListener('shown.bs.modal', function () {
+        myInput.focus()
+      })
+
+      $("#mini01").mouseover
+    </script>
+
+</body>
+
+</html>
